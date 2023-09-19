@@ -62,7 +62,11 @@ class AppSettings:
 
         # Multithreading Configuration
         if settings['application']['multithreading']['threads'] <= 0:
-            QueueWorker.threads = os.cpu_count() / 2
+            cpus = os.cpu_count() / 2
+            if cpus:
+                QueueWorker.threads = cpus
+            else:
+                QueueWorker.threads = 1
         else:
             QueueWorker.threads = settings['application']['multithreading']['threads']
 
