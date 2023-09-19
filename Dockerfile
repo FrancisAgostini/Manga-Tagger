@@ -22,5 +22,15 @@ WORKDIR /manga-tagger/
 
 RUN pip install --no-cache -r requirements.txt
 
+ARG PUID=99
+ARG PGID=100
+
+RUN groupadd -r -g 100 abc && useradd -r -g abc -u 99 abc
+RUN chown -R abc /downloads
+RUN chown -R abc /library
+VOLUME chown -R abc /config
+
+USER abc:abc
+
 # RUN python MangaTagger.py
 CMD [ "python", "./MangaTagger.py"]
