@@ -53,12 +53,12 @@ This will be renamed to
 
 ## Support
 
-Log issues via [GitHub](https://github.com/sanchoblaze/Manga-Tagger/issues)
+Log issues via [GitHub](https://github.com/FrancisAgostini/Manga-Tagger/issues)
 
 ## Contributing
 Pull requests are always welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-If you have any questions, please feel free to reach out on our [GitHub Discussions](https://github.com/sanchoblaze/Manga-Tagger/discussions).
+If you have any questions, please feel free to reach out on our [GitHub Discussions](https://github.com/FrancisAgostini/Manga-Tagger/discussions).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
